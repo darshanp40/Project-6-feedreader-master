@@ -1,10 +1,10 @@
 # Feed Reader Testing
 The file feedreader.js is a test suite for this project which contains multiple specs. These specs are supposed to pass in order to have bug-free feed reader application.
 
-##How to run the test
+## How to run the test
 Just open the index.html file in the browser. The result of the test cases would be shown at the bottom of the page.
 
-##Requirements of the assignment
+## Requirements of the assignment
 1. Write a test that loops through each feed in the allFeeds object and ensures it has a URL defined and that the URL is not empty.
 2. Write a test that loops through each feed in the allFeeds object and ensures it has a name defined and that the name is not empty.
 3. Write a new test suite named "The menu".
