@@ -42,6 +42,12 @@ $(function() {
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
+        it('name defined', function(){
+            for (var index = 0; index < allFeeds.length; index++) {
+                expect(allFeeds[index].name).toBeDefined();
+                expect(allFeeds[index].name).not.toBe("");
+            }
+        });
     });
 
 
