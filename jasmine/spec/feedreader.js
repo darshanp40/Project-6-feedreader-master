@@ -30,8 +30,13 @@ $(function() {
         /* TODO: Write a test that loops through each feed
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
-         */
-
+         */ 
+        it('URL defined', function(){
+            for (var index = 0; index < allFeeds.length; index++) {
+                expect(allFeeds[index].url).toBeDefined();
+                expect(allFeeds[index].url).not.toBe("");
+            }
+        });
 
         /* TODO: Write a test that loops through each feed
          * in the allFeeds object and ensures it has a name defined
