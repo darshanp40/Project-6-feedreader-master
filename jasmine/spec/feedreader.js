@@ -90,8 +90,7 @@ $(function() {
             });
         });
         it('check entry element after loadFeed is complete', function(done) {
-            var entryElement = document.getElementsByClassName('entry');
-            expect(entryElement.length).not.toBe(0);
+            expect(document.querySelector(".feed").getElementsByClassName("entry").length).toBeGreaterThan(0);
             done();
         });
         // Make sure each (.feed .entry-link) element is not empty
